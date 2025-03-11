@@ -28,6 +28,7 @@ class UtilHeader extends StatelessWidget {
               onTap: onBackButtonPressed,
               child: Icon(
                 Icons.arrow_back_ios,
+                size: 24,
               )),
           Text(
             ' Create Password ',

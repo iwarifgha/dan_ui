@@ -17,12 +17,15 @@ class CreatePasswordScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
+            //Appbar section
             UtilHeader(
               onBackButtonPressed: () {
                 Navigator.pop(context);
               },
               onCloseButtonPressed: () {},
             ),
+
+            //Body section
             Container(
               height: 350,
               width: getScreenWidth(context) * .9,
@@ -41,9 +44,10 @@ class CreatePasswordScreen extends StatelessWidget {
                     Text('Password setting',
                         style: kStyle1.copyWith(color: seedColor)),
                     SizedBox(
-                      height: 15,
+                      height: 5, //Additional spacing
                     ),
-                    Text('Password', style: kStyle1),
+                    //Password
+                    Text('Password', style: kStyle1.copyWith(fontSize: 14)),
                     TextField(
                         decoration: InputDecoration(
                       border: OutlineInputBorder(
@@ -51,9 +55,14 @@ class CreatePasswordScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(14),
                       ),
                       hintText: 'Enter password',
-                      hintStyle: kStyle2.copyWith(color: Colors.grey.shade400),
+                      hintStyle: kStyle2.copyWith(color: Colors.grey.shade400,),
                     )),
-                    Text('Confirm Password', style: kStyle1),
+                    SizedBox(
+                      height: 5, //Additional spacing
+                    ),
+
+                    //Confirm password
+                    Text('Confirm Password', style: kStyle1.copyWith(fontSize: 14)),
                     TextField(
                         decoration: InputDecoration(
                       border: OutlineInputBorder(
@@ -61,7 +70,7 @@ class CreatePasswordScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(14),
                       ),
                       hintText: 'Enter password',
-                      hintStyle: kStyle2.copyWith(color: Colors.grey.shade400),
+                      hintStyle: kStyle2.copyWith(color: Colors.grey.shade400,),
                     ))
                   ],
                 ),

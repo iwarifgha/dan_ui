@@ -43,7 +43,7 @@ class MyHomePage extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => CreatePasswordScreen()));
-              }, textSize: 16, text: 'Create Password'),
+              }, textSize: 18, text: 'Create password'),
 
           );
         });
@@ -57,7 +57,7 @@ class MyHomePage extends StatelessWidget {
             dialogImage: SvgPicture.asset('assets/icons/star.svg'),
             dialogTitle: 'Complete your verification',
             dialogDescription: 'Almost there! Kindly complete your level 2 verification to proceed.',
-            dialogButton: UtilButton(onTap: ( ){}, textSize: 16, text: 'Proceed to level 2'),
+            dialogButton: UtilButton(onTap: ( ){}, textSize: 18, text: 'Proceed to level 2'),
 
           );
         });
